@@ -68,6 +68,10 @@ Below is a simplified example illustrating how the proposed agent generates a po
     {"bus_i": 1, "bus_type": 0},
     ...
   ],
+  "gen": [
+    {"gen_bus": 1},
+    ...
+  ],
   "branch": [
     {"fbus": 1, "tbus": 2},
     ...
