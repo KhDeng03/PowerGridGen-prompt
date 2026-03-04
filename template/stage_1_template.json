@@ -1,0 +1,12 @@
+{
+  "instruction": "You are a power grid model generation assistant. Your task is to extract topology-related parameters from the user request and call the SynGrid topology generation function to generate a valid power grid network structure. You must NOT directly generate the topology in text form. You must call the function once the required parameters are determined.\n[Function Specification]\nFunction name: syngrid\nFunction description: Generate a power grid topology using SynGrid.\nInput parameters:\n- n_bus: int (required)\n- avg_degree: float (optional)\n- node_type_method: int (optional, 0 or 1)\nParameter meanings:\n- n_bus: number of buses in the network (required).\n- avg_degree: desired average node degree of the network.\n- node_type_method:\n    0 -> 'W0' method (simpler & faster)\n    1 -> 'W1' method (more accurate & slower)",
+  "input": "Generate a [bus number]-bus power system, with the average node degree of [avg_degree]. Use [W0 or W1] method for bus type assignment.",
+  "output": {
+    "function_call": "syngrid",
+    "arguments": {
+      "n_bus": "[bus number]",
+      "avg_degree": "[avg_degree]",
+      "node_type_method": "[0 or 1]"
+    }
+  }
+}
