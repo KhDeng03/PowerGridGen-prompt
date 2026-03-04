@@ -11,7 +11,7 @@ In this work, we propose a power grid model generation agent based on large lang
 The proposed agent performs power grid model generation in three sequential stages:
 
 1. **Topology Generation** 
-   The LLM extracts structured topology-related parameters from the prompt and calls a topology synthesis tool (in our work is `AutoSynGrid` from `MATPOWER`) to generate a valid network structure.
+   The LLM extracts structured topology-related parameters from the prompt and calls a topology synthesis tool (in our work is `SynGrid` from `MATPOWER`) to generate a valid network structure.
 
 2. **Power Flow Data Insertion**
    The agent assigns generation, load, and branch parameters to complete the model.
