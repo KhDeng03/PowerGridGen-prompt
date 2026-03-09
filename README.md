@@ -65,7 +65,7 @@ Below is a simplified example illustrating how the proposed agent generates a po
 ```json
 {
   "bus": [
-    {"bus_i": 1, "bus_type": 0},
+    {"bus_i": 1, "bus_type": 2},
     ...
   ],
   "gen": [
